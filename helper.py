@@ -36,8 +36,8 @@ def fetch_stats(selected_user,df):
     for mssg in df['message']:
         emoji1.extend([c for c in mssg if c in emoji.UNICODE_EMOJI['en']])
     emoji_df=pd.DataFrame(Counter(emoji1).most_common(len(Counter(emoji1))))
-    for i in emoji_df[1]:
-        total_emoji=total_emoji+i
+    emoji_df=emoji_df.rename(columns={0:"Emoji",1:"count"})
+    total_emoji=emoji_df['count'].sum()
     
 	
     # using now() to get current time
