@@ -1,6 +1,6 @@
 # Whatsapp-Chat-Analyzer
 
-Click on the following link to use the application:
+Click on the following link to use the application: https://whatsappchatapp.streamlit.app/
 
 Things to keep in mind before exporting the chat text:
 
